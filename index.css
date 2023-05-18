@@ -12,4 +12,49 @@ header {
   width: 90%;
   max-width: 800px;
   margin: auto;
+  box-shadow: 5px 3px 2px #aaa;
+  padding: 20px 0px;
+  border: 1px solid #aaa;
+}
+
+#add-item {
+  width: 400px;
+  margin: 10px auto;
+}
+#add-item input {
+  width: 350px;
+  padding: 5px 0px;
+  display: block;
+  float: left;
+  border-radius: 0px;
+  border: 1px solid brown;
+}
+#add-item button {
+  background: brown;
+  color: #fff;
+  border: none;
+  padding: 6px;
+}
+#glocery-list {
+  margin: 20px;
+}
+#grocery-list ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+#grocery-list ul li {
+  margin: 10px 0px;
+  padding: 10px;
+  border-left: 5px solid #aaa;
+}
+#grocery-list ul li:hover {
+  border-color: brown;
+}
+
+#grocery-list li .delete {
+  float: right;
+  background-color: brown;
+  padding: 10px;
+  color: white;
 }
