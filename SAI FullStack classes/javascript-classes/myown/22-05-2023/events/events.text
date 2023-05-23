@@ -1,0 +1,15 @@
+1)we have 3 rules present to define event listiner concept.
+1)attribute-->onclick=lokesh()
+2)property-->button.onclick=lokesh
+3)method  -->button.addEventListiner('click',lokesh)
+
+use method rule more advantage are present.
+when we use click and when we use submit 
+based on our requirment we use different  type of event listiner.
+1)for button 'onclick.'
+2)for from 'submit'
+
+-------------
+I clearly written in notebook
+
+doubts:Can pass two funcion to the the same button which function it will trigger.
