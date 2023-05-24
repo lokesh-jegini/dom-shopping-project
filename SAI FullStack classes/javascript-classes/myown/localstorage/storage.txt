@@ -1,0 +1,18 @@
+The setItem() Method
+The localStorage.setItem() method stores a data item in a storage.
+
+It takes a name and a value as parameters:
+
+Example
+localStorage.setItem("name", "John Doe");
+-----------------------------
+The getItem() Method
+The localStorage.getItem() method retrieves a data item from the storage.
+
+It takes a name as parameter:
+
+Example
+localStorage.getItem("name");
+
+//for more information follow w3schools
+//cs world video

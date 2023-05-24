@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button>click</button>
+    <p id="demo"></p>
+    <script>
+      const a = document.querySelector("button");
+      a.addEventListener("click", () => {
+        debugger;
+
+        const d = document.querySelector("p");
+        const c = `<div class="loki" tabindex="1" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px;" class="parasidebarcontent" id="aq4">
+<div style="overflow: hidden;">
+<div style="display:flex"><input type="checkbox" class="checkbox" id="checkaq4" value="bike" style="margin-right:10px">
+<img src="https://ipubedit2-te-ui-service.azurewebsites.net/Images/Layout/Au-pro.png" width="28" height="25"> 
+<div style="font-weight: bold; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">null</div>  <div class="commnet-date">  null </div>
+<div style="display:none">aq4</div>
+</div>
+<div style="color: #888; font-size: 12px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">null </div>
+ <div class="textarea-parent" style="font-size: 14px; margin-top: 5px;">
+ aq4:<textarea type="text" class="textareahighlight" rows="3" id="aq4" readonly="" style="width:95%">Please check all author names, initials, and affiliations to confirm they are accurate.</textarea>
+</div>
+</div>
+<div class="buttongroup">             
+<span class="reply" style="display:none" id="deletebutton" onclick="DeleteComment('aq4',aq4)">Delete</span>
+<span class="reply edit-button" style="display:none" data-input-id="aq4" onclick="EditComment(aq4)">Edit</span>
+<span class="reply" style="display:none" id="replybutton">Reply</span>
+<button class="update" style="display:none" id="updatebutton" onclick="UpdateComment('aq4')">Update</button>
+</div>`;
+        d.insertAdjacentHTML("beforeend", c);
+        // Save the updated container HTML to localStorage
+        localStorage.setItem("dynamicContent", d.innerHTML);
+      });
+
+      // Check if there is data stored in localStorage
+      const storedData = localStorage.getItem("dynamicContent");
+
+      // If there is stored data, insert it into the container
+      if (storedData) {
+        const f = document.querySelector("p");
+        
+debugger
+        f.innerHTML = storedData;
+        const k = document.querySelectorAll(".loki");
+        const filteredElements = Array.from(k).filter(
+          (number) => number % 2 == 0
+          
+        );
+
+        filteredElements.forEach((element) => {
+         
+          element.style.backgroundColor = "red";
+        });
+      }
+    </script>
+  </body>
+</html>
