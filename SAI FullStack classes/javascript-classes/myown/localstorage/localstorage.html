@@ -28,30 +28,19 @@
 <button class="update" style="display:none" id="updatebutton" onclick="UpdateComment('aq4')">Update</button>
 </div>`;
         d.insertAdjacentHTML("beforeend", c);
+
         // Save the updated container HTML to localStorage
-        localStorage.setItem("dynamicContent", d.innerHTML);
+        // localStorage.setItem("dynamicContent", d.innerHTML);
       });
 
       // Check if there is data stored in localStorage
-      const storedData = localStorage.getItem("dynamicContent");
+      // const storedData = localStorage.getItem("dynamicContent");
 
       // If there is stored data, insert it into the container
-      if (storedData) {
-        const f = document.querySelector("p");
-        
-debugger
-        f.innerHTML = storedData;
-        const k = document.querySelectorAll(".loki");
-        const filteredElements = Array.from(k).filter(
-          (number) => number % 2 == 0
-          
-        );
-
-        filteredElements.forEach((element) => {
-         
-          element.style.backgroundColor = "red";
-        });
-      }
+      // if (storedData) {
+      //   const f = document.querySelector("p");
+      //   f.innerHTML = storedData;
+      // }
     </script>
   </body>
 </html>
